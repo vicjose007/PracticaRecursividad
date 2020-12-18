@@ -1,0 +1,27 @@
+using System;
+
+namespace Mamu
+{
+    class Program
+    {
+        int MCD(int n1,int n2)
+        {
+            if(n2 == 0)
+            return n1;
+
+            return MCD(n2, n1 % n2);
+        }
+
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Enter 2 numbers");
+
+            int n1 = int.Parse(Console.ReadLine());
+            int n2 = int.Parse(Console.ReadLine());
+            Program max = new Program();
+            int r= max.MCD(n1,n2);
+            Console.WriteLine(r);
+        }
+
+    }
+}

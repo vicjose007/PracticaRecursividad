@@ -1,0 +1,27 @@
+using System;
+
+namespace Mamu
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+          int i;
+          int f = 1;
+          int n;   
+
+          Console.WriteLine("Enter a Number: ");      
+
+           n= int.Parse(Console.ReadLine());     
+
+           for(i=1; i<=n ;i++)
+
+           {      
+           f=f*i;  
+           } 
+
+             Console.WriteLine(f);
+             
+        }
+    }
+}

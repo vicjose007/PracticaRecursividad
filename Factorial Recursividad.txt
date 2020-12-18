@@ -1,0 +1,27 @@
+using System;
+
+namespace Mamu
+{
+    class Program
+    {
+
+        int factorial(int n)        
+        {           
+            if(n <= 1)
+            return 1;
+    
+            return n * factorial(n-1);   
+        }
+        static void Main(string[] args)
+        {
+            int num;
+            int r;
+            Console.WriteLine("Enter a number");
+            num = int.Parse(Console.ReadLine());
+            Program fact = new Program();
+            r= fact.factorial(num);
+            Console.WriteLine(r);
+
+        }
+    }
+}

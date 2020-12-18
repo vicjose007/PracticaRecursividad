@@ -1,0 +1,27 @@
+using System;
+
+namespace Mamu
+{
+    class Program
+    {
+
+        int sum(int n)        
+        {       
+            if(n <= 1)    
+                return n;
+
+                return n + sum(n-1);
+        }
+        static void Main(string[] args)
+        {
+            int num;
+            int r;
+            Console.WriteLine("Enter a number");
+            num = int.Parse(Console.ReadLine());
+            Program suma = new Program();
+            r= suma.sum(num);
+            Console.WriteLine(r);
+
+        }
+    }
+}
